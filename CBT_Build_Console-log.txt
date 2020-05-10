@@ -1,0 +1,36 @@
+23:09:52 **** Clean-only build of configuration Debug for project debug_c_of_python ****
+make clean 
+rm -rf  ./src/SubclassList.o ./src/main.o ./src/py_call_super.o ./src/py_import_call_execute.o  ./src/SubclassList.d ./src/main.d ./src/py_call_super.d ./src/py_import_call_execute.d  test_sclist
+ 
+
+23:09:52 Build Finished. 0 errors, 0 warnings. (took 79ms)
+
+23:09:52 **** Build of configuration Debug for project debug_c_of_python ****
+make all 
+Building file: ../src/SubclassList.c
+Invoking: GCC C Compiler
+gcc -std=c11 -I/<HOME>/apps/python-3.8.2/include/python3.8 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SubclassList.d" -MT"src/SubclassList.o" -o "src/SubclassList.o" "../src/SubclassList.c"
+Finished building: ../src/SubclassList.c
+ 
+Building file: ../src/main.c
+Invoking: GCC C Compiler
+gcc -std=c11 -I/<HOME>/apps/python-3.8.2/include/python3.8 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building file: ../src/py_call_super.c
+Invoking: GCC C Compiler
+gcc -std=c11 -I/<HOME>/apps/python-3.8.2/include/python3.8 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/py_call_super.d" -MT"src/py_call_super.o" -o "src/py_call_super.o" "../src/py_call_super.c"
+Finished building: ../src/py_call_super.c
+ 
+Building file: ../src/py_import_call_execute.c
+Invoking: GCC C Compiler
+gcc -std=c11 -I/<HOME>/apps/python-3.8.2/include/python3.8 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/py_import_call_execute.d" -MT"src/py_import_call_execute.o" -o "src/py_import_call_execute.o" "../src/py_import_call_execute.c"
+Finished building: ../src/py_import_call_execute.c
+ 
+Building target: debug_c_of_python
+Invoking: GCC C Linker
+gcc -L/<HOME>/apps/python-3.8.2/lib -lpython3.8 -lcrypt -lpthread -ldl  -lutil -lm -o debug_c_of_py -o "debug_c_of_python"  ./src/SubclassList.o ./src/main.o ./src/py_call_super.o ./src/py_import_call_execute.o   
+Finished building target: debug_c_of_python
+ 
+
+23:09:52 Build Finished. 0 errors, 0 warnings. (took 645ms)

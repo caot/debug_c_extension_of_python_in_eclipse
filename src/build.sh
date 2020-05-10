@@ -1,0 +1,1 @@
+../../PythonExtensionPatterns.git/PythonSubclassList/build.sh

@@ -1,0 +1,1 @@
+../../PythonExtensionPatterns.git/PythonSubclassList/test_sclist.py
